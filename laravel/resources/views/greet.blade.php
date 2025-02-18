@@ -34,8 +34,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hello, Laravel!</h1>
-        <p>Camil Grace J. Bumatay</p>
+        <!-- <h1>Hello, Laravel!</h1>
+        <p>Camil Grace J. Bumatay</p> -->
+        
+        <p>Hello, {{ $name }}</p> 
     </div>
 </body>
 </html>
