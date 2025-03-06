@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
     <title>Task Manager</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="container mt-4">
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto mt-4">
         @if (session('success'))
-            <div class="alert alert-success">
+            <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
                 {{ session('success') }}
             </div>
         @endif
 
         @yield('content')
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

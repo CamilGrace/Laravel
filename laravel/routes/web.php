@@ -6,7 +6,7 @@ use App\Http\Controllers\TaskController;
 
 
 Route::get('/', function () {
-    return redirect('/tasks');
+    return redirect('/welcome');
 });
 
 //Simple Routing
